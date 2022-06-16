@@ -10,7 +10,6 @@ from flask_bcrypt import Bcrypt
 from blog.hash import Hashing
 
 
-
 user = Blueprint('user', __name__)
 
 

@@ -16,7 +16,7 @@ def before_request():
     g.email = None 
     if 'email' in session:
         g.email = session['email']
-        print('g.email ____________', g.email)
+        #print('g.email ____________', g.email)
 
 
 @post.route('/show_post')
