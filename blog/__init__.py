@@ -12,9 +12,6 @@ def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(Config)
     db.init_app(app)
-    migrate = Migrate(app, db)
-    with app.app_context():
-        db.create_all()
     
     from blog.user.routes import user
     #from blog.admin.routes import admin
